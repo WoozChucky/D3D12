@@ -1,8 +1,7 @@
 #pragma once
 
-#include "DX12Defines.h"
+#include "base_application.h"
 
-#include "Object.h"
 #include "Window.h"
 #include "Game.h"
 #include "CommandQueue.h"
@@ -15,7 +14,7 @@
 
 using AdapterList = std::vector<Microsoft::WRL::ComPtr<IDXGIAdapter4>>;
 
-class Application : public Object
+class Application
 {
 public:
 

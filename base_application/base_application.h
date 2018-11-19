@@ -49,3 +49,7 @@
 #define _64MB _MB(64)
 #define _128MB _MB(128)
 #define _256MB _MB(256)
+
+#pragma comment(lib, "d3d12.lib")
+#pragma comment(lib, "dxgi.lib")
+#pragma comment(lib, "dxguid.lib")

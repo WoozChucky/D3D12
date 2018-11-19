@@ -60,8 +60,8 @@ static WORD g_Indicies[36] =
 
 SampleGame::SampleGame(const std::wstring& name, int width, int height, bool vSync)
 	: super(name, width, height, vSync)
-	, m_ScissorRect(CD3DX12_RECT(0, 0, LONG_MAX, LONG_MAX))
 	, m_Viewport(CD3DX12_VIEWPORT(0.0f, 0.0f, static_cast<float>(width), static_cast<float>(height)))
+	, m_ScissorRect(CD3DX12_RECT(0, 0, LONG_MAX, LONG_MAX))
 	, m_FoV(45.0)
 	, m_ContentLoaded(false)
 {
@@ -292,7 +292,7 @@ void SampleGame::OnUpdate(UpdateEventArgs& e)
 {
 	static uint64_t frameCount = 0;
 	static double totalTime = 0.0;
-
+	
 	super::OnUpdate(e);
 
 	totalTime += e.ElapsedTime;

@@ -7,9 +7,12 @@
 #include <d3d12.h>
 #include <dxgi1_5.h>
 
-#include "DX12Defines.h"
+#include "base_application.h"
 #include "Events.h"
+
 #include "HighResolutionClock.h"
+
+using namespace Engine::Core;
 
 class Game;
 

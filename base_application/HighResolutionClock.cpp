@@ -1,5 +1,6 @@
 #include "HighResolutionClock.h"
 
+using namespace Engine::Core;
 
 HighResolutionClock::HighResolutionClock()
 	: m_DeltaTime(0)

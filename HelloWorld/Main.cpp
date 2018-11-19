@@ -2,19 +2,18 @@
 
 #define _DISABLE_EXTENDED_ALIGNED_STORAGE
 
-#pragma comment(lib, "d3d12.lib")
-#pragma comment(lib, "dxgi.lib")
-#pragma comment(lib, "dxguid.lib")
 #pragma comment(lib, "D3DCompiler.lib")
 #pragma comment(lib, "Shlwapi.lib")
 
 #include <Windows.h>
 #include <Shlwapi.h>
+#include <dxgidebug.h>
 
-#include "Application.h"
 #include "SampleGame.h"
 
-#include <dxgidebug.h>
+#include <base_application.h>
+#include <Application.h>
+
 
 void ReportLiveObjects()
 {
@@ -28,6 +27,8 @@ void ReportLiveObjects()
 int CALLBACK wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PWSTR lpCmdLine, int nCmdShow)
 {
 	auto retCode = 0;
+
+	
 
 	// Set the working directory to the path of the executable.
 	WCHAR path[MAX_PATH];
